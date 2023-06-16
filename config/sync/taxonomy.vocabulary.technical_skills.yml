@@ -1,0 +1,8 @@
+uuid: 1118f7a7-4fb1-431b-93c3-a34615446ab2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Technical Skills'
+vid: technical_skills
+description: 'Use tags to group technical skills into categories.'
+weight: 0

@@ -1,0 +1,33 @@
+uuid: 1321916e-5388-400b-b16b-2a83b7e607be
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.admin-and-hr-menu
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap5
+id: adminandhrmenu
+theme: bootstrap5
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'system_menu_block:admin-and-hr-menu'
+settings:
+  id: 'system_menu_block:admin-and-hr-menu'
+  label: 'Admin and HR Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator

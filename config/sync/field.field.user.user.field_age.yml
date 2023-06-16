@@ -1,0 +1,24 @@
+uuid: 216d03fd-212b-4713-b267-8e7e687e9313
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_age
+  module:
+    - user
+id: user.user.field_age
+field_name: field_age
+entity_type: user
+bundle: user
+label: Age
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 18
+  max: null
+  prefix: ''
+  suffix: ' years old'
+field_type: integer

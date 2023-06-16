@@ -1,0 +1,17 @@
+uuid: 0c160758-ae94-42df-ac67-7b0ce8873703
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Blogs
+type: blogs
+description: 'Create blogs'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

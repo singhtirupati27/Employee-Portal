@@ -1,0 +1,25 @@
+uuid: 66173200-6d30-43fd-9f43-124ce46efac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.employee-menu
+  module:
+    - system
+  theme:
+    - bootstrap5
+id: employeemenu
+theme: bootstrap5
+region: nav_main
+weight: -6
+provider: null
+plugin: 'system_menu_block:employee-menu'
+settings:
+  id: 'system_menu_block:employee-menu'
+  label: 'Employee Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 95cf3d89-c64a-4a0a-ba64-4b38f0f4becc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_start_date
+    - node.type.project
+  module:
+    - datetime
+id: node.project.field_project_start_date
+field_name: field_project_start_date
+entity_type: node
+bundle: project
+label: 'Project Start Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

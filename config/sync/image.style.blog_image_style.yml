@@ -1,0 +1,15 @@
+uuid: ac1ccef1-dc3a-496b-9a49-804b7684daa4
+langcode: en
+status: true
+dependencies: {  }
+name: blog_image_style
+label: 'Blog Image Style (200x200)'
+effects:
+  7a211d8a-2908-47c1-90e6-2849418844fd:
+    uuid: 7a211d8a-2908-47c1-90e6-2849418844fd
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      anchor: center-center

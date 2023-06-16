@@ -1,0 +1,32 @@
+uuid: 13b32583-6b9a-4028-9a57-e229d001aec0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.technical_skills
+    - taxonomy.vocabulary.title
+  module:
+    - contextual
+    - shortcut
+    - system
+    - taxonomy
+    - toolbar
+id: hr
+label: HR
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access contextual links'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer permissions'
+  - 'administer shortcuts'
+  - 'administer users'
+  - 'create terms in technical_skills'
+  - 'create terms in title'
+  - 'delete terms in technical_skills'
+  - 'delete terms in title'
+  - 'edit terms in technical_skills'
+  - 'edit terms in title'
