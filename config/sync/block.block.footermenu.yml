@@ -1,0 +1,25 @@
+uuid: 2413f976-6762-441f-8e4e-91c499e95dba
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-menu
+  module:
+    - system
+  theme:
+    - bootstrap5
+id: footermenu
+theme: bootstrap5
+region: footer
+weight: -7
+provider: null
+plugin: 'system_menu_block:footer-menu'
+settings:
+  id: 'system_menu_block:footer-menu'
+  label: 'Footer Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

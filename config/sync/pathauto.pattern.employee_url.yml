@@ -1,0 +1,14 @@
+uuid: eb6feca8-a686-4ca4-bc51-1483d0263e7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: employee_url
+label: 'Employee URL'
+type: 'canonical_entities:user'
+pattern: '/employee/[user:display-name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

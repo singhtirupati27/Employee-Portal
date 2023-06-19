@@ -1,0 +1,168 @@
+uuid: 67fc147c-c131-4e64-8445-ca446d06fb1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.project.title
+    - core.entity_view_mode.node.full
+    - field.field.node.project.field_customer_name
+    - field.field.node.project.field_project_image
+    - field.field.node.project.field_project_start_date
+    - field.field.node.project.field_project_team
+    - image.style.blog_image_style
+    - node.type.project
+  module:
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          0909b341-d976-4d29-9c12-7046a81f1f88:
+            uuid: 0909b341-d976-4d29-9c12-7046a81f1f88
+            region: first
+            configuration:
+              id: 'field_block:node:project:field_project_image'
+              label: 'Project Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: blog_image_style
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          61e9eecd-d253-4d18-bc41-27be24b952be:
+            uuid: 61e9eecd-d253-4d18-bc41-27be24b952be
+            region: second
+            configuration:
+              id: 'field_block:node:project:title'
+              label: 'Project Name'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e15caf19-020c-4cf9-94ef-c6de5a941b88:
+            uuid: e15caf19-020c-4cf9-94ef-c6de5a941b88
+            region: second
+            configuration:
+              id: 'field_block:node:project:field_customer_name'
+              label: 'Customer Name'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          ec422229-3621-4b9f-8d09-e4de5b7f0656:
+            uuid: ec422229-3621-4b9f-8d09-e4de5b7f0656
+            region: second
+            configuration:
+              id: 'field_block:node:project:field_project_team'
+              label: 'Project Team'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          efe66420-39ba-4606-84c3-2e2cd80cdfb1:
+            uuid: efe66420-39ba-4606-84c3-2e2cd80cdfb1
+            region: second
+            configuration:
+              id: 'field_block:node:project:field_project_start_date'
+              label: 'Project Start Date'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.project.full
+targetEntityType: node
+bundle: project
+mode: full
+content:
+  field_customer_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_project_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: blog_image_style
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_project_team:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_project_start_date: true

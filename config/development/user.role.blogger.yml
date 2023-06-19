@@ -1,0 +1,33 @@
+uuid: 36d7fd5b-4739-4a5b-83f8-2e73ef51dbad
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blogs
+  module:
+    - comment
+    - contextual
+    - devel_generate
+    - node
+    - system
+    - toolbar
+    - tour
+id: blogger
+label: Blogger
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'access tour'
+  - 'access user profiles'
+  - 'administer devel_generate'
+  - 'create blogs content'
+  - 'delete blogs revisions'
+  - 'delete own blogs content'
+  - 'edit own blogs content'
+  - 'edit own comments'
+  - 'view own unpublished content'
+  - 'view the administration theme'

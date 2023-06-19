@@ -1,0 +1,20 @@
+uuid: b1af7b02-7c6f-45e5-bd64-f7de2e005992
+langcode: en
+status: true
+dependencies: {  }
+id: development
+label: Development
+description: ''
+weight: 0
+folder: ../config/development
+module:
+  admin_toolbar: 0
+  admin_toolbar_tools: 0
+  config_split: 0
+  devel: 0
+  devel_generate: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

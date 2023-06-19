@@ -1,0 +1,15 @@
+uuid: 377d4bde-7900-48fd-9bf7-eded9d7a3006
+langcode: en
+status: true
+dependencies: {  }
+name: employee_image_style
+label: 'Employee Image Style (250x250)'
+effects:
+  6fcf4c7a-a7f7-4beb-a7e1-42fc061f8351:
+    uuid: 6fcf4c7a-a7f7-4beb-a7e1-42fc061f8351
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 250
+      anchor: center-center

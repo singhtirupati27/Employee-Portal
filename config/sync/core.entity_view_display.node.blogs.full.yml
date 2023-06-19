@@ -1,0 +1,135 @@
+uuid: 0cc98f10-9e9a-4c3f-b5dc-2a61c47bb6d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.blogs.body
+    - field.field.node.blogs.field_blog_comment
+    - field.field.node.blogs.field_blog_image
+    - node.type.blogs
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 75-25
+        components:
+          e5453770-09f9-40ab-8982-df1a8a6df64b:
+            uuid: e5453770-09f9-40ab-8982-df1a8a6df64b
+            region: first
+            configuration:
+              id: 'field_block:node:blogs:body'
+              label: 'Blog Description'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ed07913c-e975-4fa3-a87e-d7562c0cdc9c:
+            uuid: ed07913c-e975-4fa3-a87e-d7562c0cdc9c
+            region: second
+            configuration:
+              id: 'field_block:node:blogs:field_blog_image'
+              label: 'Blog Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: file
+                  image_style: blog_image_style
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Comments
+          context_mapping: {  }
+        components:
+          f323df9e-3995-4733-b7f2-0682acdb7581:
+            uuid: f323df9e-3995-4733-b7f2-0682acdb7581
+            region: content
+            configuration:
+              id: 'field_block:node:blogs:field_blog_comment'
+              label: 'Blog Comment'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: comment_default
+                label: above
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.blogs.full
+targetEntityType: node
+bundle: blogs
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_blog_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_comments:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_blog_comment: true
